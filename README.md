@@ -22,7 +22,7 @@ And to ansowers these quation we need to manage multible data
 - apache airflow, was used to schedule and monitor workflows to orchestrate the pipline from transeefing the data from s3 storage to redshift data werehouse. it's easy to use and learn 
 
 ## Table Schema 
-There is one Fact table called 'immigration' and the other tables are dimation table.  
+We choose a start schema since it is the simplest type of data mart schema. It consists of one fact table  'immigration' referencing any number of dimension tables and is more effective for handling simpler queries. 
 
 ## explanation of some files in the repository    
 `aws.cfg` configuration and settings file to place aws access key id and aws secret access key.      
